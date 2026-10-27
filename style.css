@@ -373,7 +373,7 @@ h1, h2, h3, p {
 }
 
 .section-head__text {
-  margin: 12px 0 0;
+  margin-top: 12px;
   font-size: 17px;
   color: var(--text);
 }
@@ -465,6 +465,105 @@ h1, h2, h3, p {
   border-radius: 999px;
 }
 
+.btn--xs {
+  padding: 11px 22px;
+  font-size: 14px;
+}
+
+.products {
+  padding: 80px 0 96px;
+  background: var(--pink-light);
+}
+
+.products__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.product {
+  overflow: hidden;
+  background: var(--white);
+  border-radius: 24px;
+  box-shadow: 0 6px 20px rgba(59, 16, 48, .05);
+}
+
+.product__media {
+  position: relative;
+}
+
+.product__img {
+  width: 100%;
+  aspect-ratio: 1.54 / 1;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  padding: 5px 12px;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--white);
+  background: #16a34a;
+  border-radius: 999px;
+}
+
+.product__body {
+  padding: 18px 16px 18px;
+}
+
+.product__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.product__title {
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.3;
+  color: var(--plum);
+}
+
+.product__stars {
+  flex-shrink: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #f59e0b;
+}
+
+.product__meta {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.product__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.product__price strong {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--pink);
+}
+
+.product__old {
+  margin-left: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
 @media (max-width: 960px) {
   .hero__inner {
     grid-template-columns: 1fr;
@@ -483,6 +582,10 @@ h1, h2, h3, p {
   }
 
   .features__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -538,6 +641,14 @@ h1, h2, h3, p {
   }
 
   .features__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products {
+    padding: 56px 0 64px;
+  }
+
+  .products__grid {
     grid-template-columns: 1fr;
   }
 
