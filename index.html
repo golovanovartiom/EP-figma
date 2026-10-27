@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Petale — Flori proaspete pentru fiecare moment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>📞 060 222 333 · ✉️ comenzi@petale.md</span>
+      <span>Livrare gratuită de la 500 lei</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__row">
+        <form class="search" role="search" onsubmit="return false">
+          <span class="search__icon">🔍</span>
+          <input class="search__input" type="search" placeholder="Caută..." aria-label="Caută">
+        </form>
+
+        <a href="index.html" class="logo">
+          <span class="logo__icon">🌷</span>
+          <span class="logo__text">Pe<span>tale</span></span>
+        </a>
+
+        <a href="#buchete" class="btn btn--primary btn--sm">Comandă acum</a>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html" class="nav__link is-active">Acasă</a>
+        <a href="#buchete" class="nav__link">Buchete</a>
+        <a href="#abonamente" class="nav__link">Abonamente</a>
+        <a href="#evenimente" class="nav__link">Evenimente</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero__inner">
+
+        <div class="hero__content">
+          <span class="pill">Livrare în 2 ore</span>
+
+          <h1 class="hero__title">Flori <span>proaspete</span> pentru fiecare moment</h1>
+
+          <p class="hero__text">
+            Buchete create de florişti cu experienţă, din flori aduse direct de la producători. Le livrăm oriunde în oraş.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#buchete" class="btn btn--primary">Alege un buchet</a>
+            <a href="#abonamente" class="btn btn--outline">Abonamente</a>
+          </div>
+
+          <ul class="stats">
+            <li>
+              <strong class="stats__value">8.000+</strong>
+              <span class="stats__label">buchete livrate</span>
+            </li>
+            <li>
+              <strong class="stats__value">120</strong>
+              <span class="stats__label">tipuri de flori</span>
+            </li>
+            <li>
+              <strong class="stats__value">4.9</strong>
+              <span class="stats__label">nota clienţilor</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <img class="hero__img" src="hero-roses.png" alt="Buchet de trandafiri roz">
+
+          <div class="float-card float-card--top">
+            <span class="float-card__icon">💌</span>
+            <div>
+              <strong>Felicitare cadou</strong>
+              <span>scrisă de mână</span>
+            </div>
+          </div>
+
+          <div class="float-card float-card--bottom">
+            <span class="float-card__icon">🚚</span>
+            <div>
+              <strong>Livrare gratuită</strong>
+              <span>la comenzi peste 500 lei</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
