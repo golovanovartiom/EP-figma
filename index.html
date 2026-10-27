@@ -138,12 +138,151 @@
       </div>
     </section>
 
+    <section class="products" id="buchete">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-head__label">Buchete</span>
+          <h2 class="section-head__title">Cele mai comandate buchete</h2>
+          <p class="section-head__text">Prețurile includ ambalajul și felicitarea.</p>
+        </div>
+
+        <div class="products__grid">
+          <article class="product">
+            <div class="product__media">
+              <img class="product__img" src="buchet-1.png" alt="Trandafiri roșii și galbeni">
+            <span class="badge">TOP</span>
+            </div>
+            <div class="product__body">
+              <div class="product__top">
+                <h3 class="product__title">Trandafiri roșii</h3>
+                <span class="product__stars" aria-label="5 din 5">★★★★★</span>
+              </div>
+              <p class="product__meta">21 de fire · 50 cm</p>
+              <div class="product__bottom">
+                <div class="product__price">
+                  <strong>650 lei</strong>
+                </div>
+                <button class="btn btn--primary btn--xs js-add" type="button">În coș</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product__media">
+              <img class="product__img" src="buchet-2.png" alt="Lalele de primăvară">
+            </div>
+            <div class="product__body">
+              <div class="product__top">
+                <h3 class="product__title">Lalele de primăvară</h3>
+                <span class="product__stars" aria-label="5 din 5">★★★★★</span>
+              </div>
+              <p class="product__meta">25 de fire · mix de culori</p>
+              <div class="product__bottom">
+                <div class="product__price">
+                  <strong>420 lei</strong>
+                </div>
+                <button class="btn btn--primary btn--xs js-add" type="button">În coș</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product__media">
+              <img class="product__img" src="buchet-3.png" alt="Bujori roz">
+            <span class="badge">-13%</span>
+            </div>
+            <div class="product__body">
+              <div class="product__top">
+                <h3 class="product__title">Bujori</h3>
+                <span class="product__stars" aria-label="4 din 5">★★★★☆</span>
+              </div>
+              <p class="product__meta">11 fire · roz pal</p>
+              <div class="product__bottom">
+                <div class="product__price">
+                  <strong>780 lei</strong>
+              <s class="product__old">900 lei</s>
+                </div>
+                <button class="btn btn--primary btn--xs js-add" type="button">În coș</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product__media">
+              <img class="product__img" src="buchet-4.png" alt="Floarea-soarelui">
+            </div>
+            <div class="product__body">
+              <div class="product__top">
+                <h3 class="product__title">Floarea-soarelui</h3>
+                <span class="product__stars" aria-label="4 din 5">★★★★☆</span>
+              </div>
+              <p class="product__meta">7 fire · cu verdeață</p>
+              <div class="product__bottom">
+                <div class="product__price">
+                  <strong>350 lei</strong>
+                </div>
+                <button class="btn btn--primary btn--xs js-add" type="button">În coș</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product__media">
+              <img class="product__img" src="buchet-5.png" alt="Orhidee în ghiveci">
+            </div>
+            <div class="product__body">
+              <div class="product__top">
+                <h3 class="product__title">Orhidee în ghiveci</h3>
+                <span class="product__stars" aria-label="5 din 5">★★★★★</span>
+              </div>
+              <p class="product__meta">2 tije · albă</p>
+              <div class="product__bottom">
+                <div class="product__price">
+                  <strong>480 lei</strong>
+                </div>
+                <button class="btn btn--primary btn--xs js-add" type="button">În coș</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product__media">
+              <img class="product__img" src="buchet-6.png" alt="Buchet de mireasă">
+            <span class="badge">NOU</span>
+            </div>
+            <div class="product__body">
+              <div class="product__top">
+                <h3 class="product__title">Buchet de mireasă</h3>
+                <span class="product__stars" aria-label="5 din 5">★★★★★</span>
+              </div>
+              <p class="product__meta">trandafiri și frezii</p>
+              <div class="product__bottom">
+                <div class="product__price">
+                  <strong>950 lei</strong>
+                </div>
+                <button class="btn btn--primary btn--xs js-add" type="button">În coș</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <button class="cart-btn" type="button" aria-label="Coș de cumpărături">
     🛒
     <span class="cart-btn__count">3</span>
   </button>
+
+  <script>
+    document.querySelectorAll(".js-add").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var count = document.querySelector(".cart-btn__count");
+        count.textContent = (parseInt(count.textContent, 10) || 0) + 1;
+      });
+    });
+  </script>
 
 </body>
 </html>
